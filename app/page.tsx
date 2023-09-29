@@ -1,5 +1,11 @@
-const Home = () => {
-  return <div>page</div>;
+import { Header } from "@/components/Header";
+
+const Welcome = () => {
+  return (
+    <div data-testid={"Welcome"}>
+      <Header />
+    </div>
+  );
 };
 
-export default Home;
+export default Welcome;
