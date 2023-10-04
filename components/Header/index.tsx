@@ -1,9 +1,6 @@
 "use client";
-// import styles from "./styles.module.scss";
 import * as React from "react";
 import logo from "@/public/icon/core.svg";
-import { useState } from "react";
-import { IDivId } from "./models";
 import Image from "next/image";
 import { Anchor, Button } from "antd";
 import { UserOutlined } from "@ant-design/icons";
@@ -11,37 +8,6 @@ import { Avatar } from "antd";
 
 //Header главного окна
 export const Header = () => {
-  //Хранится последнее местоположение позиции окна пользователя
-  const [location, setLocation] = useState<IDivId>();
-
-  //Обработчик события клика по span, в зависимости у какого span произошел onClick, перемешает окно пользователя
-  // const handleClick = (divId: IDivId) => {
-  //   let point = 0;
-
-  //   if (divId === location) {
-  //     point = 0;
-  //     setLocation(undefined);
-  //   } else {
-  //     if (divId === "WhatIs") point = 1280;
-  //     else if (divId === "YouWillBeAble") point = 3940;
-  //     else if (divId === "WhoIsItFor") point = 5989;
-  //     else if (divId === "OurRates") point = 7941;
-
-  //     setLocation(divId);
-  //   }
-
-  //   window.scrollTo(0, point);
-  // };
-
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   return (
     <div
       className="fixed mx-auto w-full py-1 bg-slate-400"
