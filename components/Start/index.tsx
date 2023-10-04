@@ -6,15 +6,27 @@ export const Start = () => {
   return (
     <div className="relative -z-10 mx-auto" data-testid={"Start"}>
       <Image src={salon} alt="Salon" />
-      <div className="absolute right-10 bottom-40">
-        <div className="flex items-center">
-          <Image src={logo} alt="Logo" />
-          <p className="h-max text-9xl font-russo ml-5">Ядро</p>
+      <div className="absolute right-5 bottom-5 sm:right-12 sm:bottom-40 md:right-20 md:bottom-20 2-xl:right-10 2-xl:bottom-20">
+        <div className="flex items-center mb-1">
+          <Image
+            src={logo}
+            className="w-11 sm:w-14 md:w-28 2xl:w-40"
+            alt="Logo"
+          />
+          <p className="h-max text-2xl md:text-5xl 2xl:text-9xl font-russo ml-2 2xl:ml-5">
+            Ядро
+          </p>
         </div>
         <div>
-          <p className="text-7xl font-bold">Автоматизация</p>
-          <p className="text-7xl font-bold mt-3">салона красоты</p>
-          <p className="text-4xl mt-5"> - как никогда проста</p>
+          <p className="text-lg/4 md:text-3xl md:font-medium 2xl:text-7xl 2xl:font-bold">
+            Автоматизация
+          </p>
+          <p className="text-lg/4 md:text-3xl md:font-medium 2xl:text-7xl 2xl:font-bold 2-xl:mt-3">
+            салона красоты
+          </p>
+          <p className="text-xs md:text-xl 2xl:text-4xl 2xl:mt-5">
+            - как никогда проста
+          </p>
         </div>
       </div>
     </div>

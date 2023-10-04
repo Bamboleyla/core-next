@@ -6,7 +6,7 @@ const Welcome = () => {
     <div className="flex">
       <Header />
       <div
-        className="relative max-w-screen-2xl mx-auto mt-16"
+        className="relative max-w-screen-2xl mx-auto mt-10 2-xl:mt-16"
         data-testid={"Welcome"}
       >
         <Start />
