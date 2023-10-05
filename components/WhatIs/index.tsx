@@ -1,5 +1,4 @@
 import { CardForWelcome } from "../CardForWelcome";
-import { TitleFromWelcome } from "../TitleForWelcome";
 import owner from "@/public/image/owner.png";
 import admin from "@/public/image/administrator.png";
 import master from "@/public/image/master.png";
@@ -56,16 +55,22 @@ const config = [
 
 export const WhatIs = () => {
   return (
-    <div className="bg-[#EC9E29] text-black p-2" data-testid={"WhatIs"}>
-      <TitleFromWelcome
-        title="Что такое Ядро?"
-        description="Это облачное решение позволяет:"
-      />
-      <div>
-        {config.map((item) => (
-          <CardForWelcome key={item.title} {...item} />
-        ))}
+    <div
+      className="bg-[#EC9E29] text-black p-2 2xl:p-10"
+      data-testid={"WhatIs"}
+    >
+      <div className="font-[cursive]">
+        <p className="text-lg font-semibold md:text-2xl 2xl:text-5xl 2xl:mb-3">
+          Что такое Ядро?
+        </p>
+        <p className="md:text-xl 2xl:text-3xl">
+          -это облачное решение, которое позволяет:
+        </p>
       </div>
+
+      {config.map((item) => (
+        <CardForWelcome key={item.title} {...item} />
+      ))}
     </div>
   );
 };
