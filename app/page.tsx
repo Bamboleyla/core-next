@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Start } from "@/components/Start";
 import { WhatIs } from "@/components/WhatIs";
+import { YouWillBeAble } from "@/components/YouWillBeAble";
 
 const Welcome = () => {
   return (
@@ -12,6 +13,7 @@ const Welcome = () => {
       >
         <Start />
         <WhatIs />
+        <YouWillBeAble />
       </div>
     </div>
   );
