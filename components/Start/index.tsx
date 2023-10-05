@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Start = () => {
   return (
-    <div className="relative -z-10 mx-auto" data-testid={"Start"}>
+    <div className="relative mx-auto" data-testid={"Start"}>
       <Image src={salon} alt="Salon" />
       <div className="absolute right-5 bottom-5 sm:right-12 sm:bottom-40 md:right-20 md:bottom-20 2-xl:right-10 2-xl:bottom-20">
         <div className="flex items-center mb-1">

@@ -10,7 +10,7 @@ import { Avatar } from "antd";
 export const Header = () => {
   return (
     <div
-      className="fixed mx-auto w-full py-1 bg-slate-400"
+      className="fixed mx-auto w-full py-1 bg-slate-400 z-10"
       data-testid={"Header"}
     >
       <div className=" w-11/12 2xl:h-14 mx-auto text-2xl text-white gap-x-5 max-w-screen-2xl min-w-max">

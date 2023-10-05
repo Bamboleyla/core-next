@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Start } from "@/components/Start";
+import { WhatIs } from "@/components/WhatIs";
 
 const Welcome = () => {
   return (
@@ -10,6 +11,7 @@ const Welcome = () => {
         data-testid={"Welcome"}
       >
         <Start />
+        <WhatIs />
       </div>
     </div>
   );

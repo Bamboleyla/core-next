@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import styles from "./styles.module.scss";
 import Image from "next/image";
 
 interface Props {
@@ -10,13 +9,19 @@ interface Props {
 
 export const CardForWelcome = ({ img, title, description }: Props) => {
   return (
-    <div className={styles.body} data-testid={"CardForWelcome"}>
-      <Image src={img.src} alt="imgCard" />
-      <div className={styles.text}>
-        <p className={styles.title}>{title}</p>
+    <div className="flex mt-5" data-testid={"CardForWelcome"}>
+      <Image
+        className="w-28 h-28"
+        src={img.src}
+        alt="imgCard"
+        width={520}
+        height={520}
+      />
+      <div className="ml-5 -mt-1 text-xs font-[system-ui]">
+        <p className="font-semibold">{title}</p>
         {description.map((string, index) => {
           return (
-            <p key={index} className={styles.string}>
+            <p key={index} className="font-thin text-xs/3">
               {string}
             </p>
           );
