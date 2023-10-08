@@ -17,7 +17,7 @@ export const CardForWelcome = ({ img, title, description }: Props) => {
         width={520}
         height={520}
       />
-      <div className="ml-5 -mt-1 text-xs font-[system-ui] md:w-3/5 lg:w-5/12 2xl:w-6/12">
+      <div className="ml-5 -mt-1 text-xs font-[system-ui] md:w-3/5 lg:w-6/12">
         <p className="font-semibold md:text-xl 2xl:text-4xl">{title}</p>
         {description.map((string, index) => {
           return (

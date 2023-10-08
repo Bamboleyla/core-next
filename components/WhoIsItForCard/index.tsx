@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import styles from "./styles.module.scss";
 
 interface Props {
   img: StaticImageData; //Изображение карты
@@ -7,9 +6,11 @@ interface Props {
 }
 export const WhoIsItForCard = ({ img, title }: Props) => {
   return (
-    <div className={styles.component}>
+    <div>
       <Image src={img} alt={`Card ${title}`} />
-      <p>{title}</p>
+      <p className="text-center text-sm text-black mt-1 sm:font-medium sm:text-base md:text-xl md:mt-2 2xl:w-[370px]">
+        {title}
+      </p>
     </div>
   );
 };
