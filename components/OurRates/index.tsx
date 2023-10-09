@@ -1,22 +1,7 @@
 import { CardForOurRates } from "@/components/CardForOurRates";
-import professional from "@/public/image/professionalRates.png";
-import start from "@/public/image/startRates.png";
+import { config } from "./config";
 
-const config = [
-  {
-    img: start,
-    title: "Start",
-    subTitle: "БЕСПЛАТНО / 3мес",
-    description: "Попробуйте все преимущества нашего сервиса",
-  },
-  {
-    img: professional,
-    title: "Professional",
-    subTitle: "500 руб. мес.",
-    description: "Используйте возможности сервиса на все 100%",
-  },
-];
-
+// Компонент с описанием тарифов
 export const OurRates = () => {
   return (
     <div

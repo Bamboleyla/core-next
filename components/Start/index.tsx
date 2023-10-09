@@ -2,6 +2,7 @@ import logo from "@/public/icon/Logo320.svg";
 import salon from "@/public/image/beautySalon.png";
 import Image from "next/image";
 
+// Компонент начальной секции стартовой страницы
 export const Start = () => {
   return (
     <div className="relative mx-auto" data-testid={"Start"}>

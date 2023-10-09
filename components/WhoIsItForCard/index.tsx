@@ -4,6 +4,8 @@ interface Props {
   img: StaticImageData; //Изображение карты
   title: string; //Заголовок
 }
+
+// Компонент карточки секции - Для кого разработано Ядро?
 export const WhoIsItForCard = ({ img, title }: Props) => {
   return (
     <div>
