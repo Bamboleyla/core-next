@@ -1,4 +1,3 @@
-import styles from "./styles.module.scss";
 import Image, { StaticImageData } from "next/image";
 
 interface Props {
@@ -15,14 +14,14 @@ export const CardForOurRates = ({
   description,
 }: Props) => {
   return (
-    <div className={styles.component}>
-      <div className={styles.body} data-testid={"CardForOurRates"}>
-        <Image src={img} alt="imgCard" />
-        <div className={styles.text}>
-          <p className={styles.title}>{title}</p>
-          <p className={styles.sub}>{subTitle}</p>
-          <p className={styles.description}>{description}</p>
-        </div>
+    <div data-testid={"CardForOurRates"}>
+      <Image src={img} alt="imgCard" />
+      <div className="text-center font-[cursive] mt-5">
+        <p className="text-lg font-semibold md:text-2xl 2xl:text-5xl 2xl:mb-3">
+          {title}
+        </p>
+        <p className="text-xs md:text-sm md:mt-3 2xl:text-xl">{subTitle}</p>
+        <p className="text-xs md:text-sm 2xl:text-xl">{description}</p>
       </div>
     </div>
   );

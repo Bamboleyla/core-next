@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { OurRates } from "@/components/OurRates";
 import { Start } from "@/components/Start";
 import { WhatIs } from "@/components/WhatIs";
 import { WhoIsItFor } from "@/components/WhoIsItFor";
@@ -16,6 +17,7 @@ const Welcome = () => {
         <WhatIs />
         <YouWillBeAble />
         <WhoIsItFor />
+        <OurRates />
       </div>
     </div>
   );
