@@ -5,7 +5,8 @@ import { config } from "./config";
 export const OurRates = () => {
   return (
     <div
-      className="bg-[#FCFEAA] p-2 pb-5 md:pb-20 2xl:p-10  text-black"
+      id="rates"
+      className="bg-[#FCFEAA] p-2 pb-5 md:pb-20 md:pt-10 md:px-10 text-black"
       data-testid={"OurRates"}
     >
       <div className="font-[cursive]">

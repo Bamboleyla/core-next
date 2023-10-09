@@ -1,11 +1,12 @@
 import { CardForWelcome } from "../CardForWelcome";
 import { config } from "./config";
 
-// Компонент секции - Благодаря Ядру на стартовой странице
+// Компонент секции - Благодаря Ядру
 export const YouWillBeAble = () => {
   return (
     <div
-      className="bg-[#B58FDB] text-black p-2 2xl:p-10"
+      id="opportunities"
+      className="bg-[#B58FDB] text-black p-2 md:p-10 2xl:pt-16"
       data-testid={"YouWillBeAble"}
     >
       <div className="font-[cursive]">

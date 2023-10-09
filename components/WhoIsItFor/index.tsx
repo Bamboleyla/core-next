@@ -4,7 +4,11 @@ import { config } from "./config";
 // Компонент секции - Для кого разработано Ядро?
 export const WhoIsItFor = () => {
   return (
-    <div className="bg-[#C4F2F2] p-2 2xl:p-10" data-testid={"WhoIsItFor"}>
+    <div
+      id="our_clients"
+      className="bg-[#C4F2F2] p-2 md:p-10 2xl:pt-16"
+      data-testid={"WhoIsItFor"}
+    >
       <div className="font-[cursive] text-black">
         <p className="text-lg font-semibold md:text-2xl 2xl:text-5xl 2xl:mb-3">
           Для кого разработано Ядро?

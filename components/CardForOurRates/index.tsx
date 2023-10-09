@@ -6,7 +6,7 @@ interface Props {
   subTitle: string; //Подзаголовок
   description: string; //Описание
 }
-//Компонент с тарифами
+//Компонент карточки тарифа
 export const CardForOurRates = ({
   img,
   title,
