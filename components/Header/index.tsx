@@ -3,8 +3,7 @@ import * as React from "react";
 import logo from "@/public/icon/core.svg";
 import Image from "next/image";
 import { Anchor, Button } from "antd";
-import { UserOutlined } from "@ant-design/icons";
-import { Avatar } from "antd";
+import Link from "next/link";
 
 //Header главного окна
 export const Header = () => {
@@ -13,7 +12,7 @@ export const Header = () => {
       className="fixed mx-auto w-full py-1 bg-slate-400 z-10"
       data-testid={"Header"}
     >
-      <div className=" w-11/12 2xl:h-14 mx-auto text-2xl text-white gap-x-5 max-w-screen-2xl min-w-max">
+      <div className=" w-11/12 2xl:h-14 mx-auto text-white gap-x-5 max-w-screen-2xl min-w-max">
         <div className="flex justify-between items-center gap-x-2">
           {/* Логотип */}
           <div className="flex items-center gap-x-2">
@@ -55,21 +54,24 @@ export const Header = () => {
             />
           </div>
           {/* Отображение кнопки до 1536px после скрыта */}
-          <Button className="2xl:hidden" ghost size="small">
-            Попробовать бесплатно
-          </Button>
-          {/* Отображение кнопки после 1536px до скрыта */}
-          <Button className="hidden 2xl:block" ghost size="large">
-            Попробовать бесплатно
-          </Button>
-          {/* Отображение аватарки после 1536px до скрыта */}
-          <Avatar className="2xl:hidden" icon={<UserOutlined />} />
-          {/* Отображение аватарки после 1536px до скрыта */}
-          <Avatar
-            className="hidden 2xl:block"
-            icon={<UserOutlined />}
-            size={"large"}
-          />
+          <Link href="/signIn">
+            <Button className="2xl:hidden mb-0.5" ghost size="small">
+              Попробовать бесплатно
+            </Button>
+            {/* Отображение кнопки после 1536px до скрыта */}
+            <Button className="hidden 2xl:block" ghost size="large">
+              Попробовать бесплатно
+            </Button>
+          </Link>
+          <Link href="logIn">
+            <Button className="2xl:hidden mb-0.5 " ghost size="small">
+              Войти
+            </Button>
+            {/* Отображение кнопки после 1536px до скрыта */}
+            <Button className="hidden 2xl:block" ghost size="large">
+              Войти
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
